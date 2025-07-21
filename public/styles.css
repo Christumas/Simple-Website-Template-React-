@@ -7,6 +7,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0rem 3rem;
 }
 
 .title {
@@ -32,23 +33,28 @@ li {
   gap: 1rem;
 }
 
-.Btn {
-  border: none;
+button {
   font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.Btn {
   padding: 0.5rem;
   border-radius: 5px;
-  cursor: pointer;
   font-size: 0.8rem;
+  box-shadow: 0px 2px 5px steelblue;
 }
 
 .hero {
   display: flex;
-  margin-top: 3rem;
+  margin: 3rem 3rem;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   animation: float 3s infinite;
+  flex-wrap: wrap;
 }
 
 .brandMessage {
@@ -81,4 +87,84 @@ li {
   100% {
     transform: translateY(0px);
   }
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 6rem 3rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+}
+
+.feature-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(76, 75, 75);
+  box-shadow: 0px 4px 10px steelblue;
+  border-radius: 15px;
+}
+
+.feature-card img {
+  border-radius: 15px;
+}
+
+.feature description {
+  padding: 1rem;
+}
+
+.actionBox {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 6rem 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#bannerTitle {
+  text-align: center;
+}
+
+#getStartedBtn {
+  max-width: 10%;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: 0px 2px 5px steelblue;
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6rem 3rem 0rem 3rem;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+#footercompanyTitle {
+  font-size: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  padding: rem;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
 }
