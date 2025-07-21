@@ -1,0 +1,84 @@
+#root {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2rem;
+}
+.navlinks {
+  display: flex;
+  gap: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+#navlink {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: steelblue;
+}
+
+.buttonBox {
+  display: flex;
+  gap: 1rem;
+}
+
+.Btn {
+  border: none;
+  font-family: inherit;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.hero {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  animation: float 3s infinite;
+}
+
+.brandMessage {
+  width: 40%;
+}
+
+.promise {
+  font-size: 3.5rem;
+}
+
+.description {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+
+#brandPic {
+  width: 100%;
+  border-radius: 15px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
